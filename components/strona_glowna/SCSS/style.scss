@@ -2,6 +2,11 @@
 @import './components';
 @import './mixins';
 
+@font-face {
+	font-family: Pokemon_solid;
+	src: url('../Fonts/Pokemon_Solid.ttf') format('truetype');
+  }
+
 *,
 *::before,
 *::after {
@@ -70,4 +75,114 @@ body {
             transition-delay: .1s;
         }
     }
+}
+
+//------ HEADER ------//
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	height: 85vh;
+	text-align: center;
+	color: #fff;
+	@include heroImages('$bgImg');
+	background-attachment: scroll;
+
+	&__Title {
+		position: absolute;
+		font-family: Pokemon_solid, sans-serif;
+		top: 120px;
+		font-size: 5rem;
+	}
+
+	&__text {
+		position: absolute;
+		top: 130px;
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+
+	&__btn {
+		// position: absolute;
+		// top: 600px;
+		margin-top: 45rem;
+		padding: 0.8em 1.6em;
+		font-size: 1.4rem;
+		background: $red;
+		color: #fff;
+		border: none;
+		border-radius: 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		cursor: pointer;
+
+		&::before {
+			background-color: $navbar_red;
+		}
+	}
+}
+
+
+// ===========================
+// MEDIA
+// ===========================
+
+@media(min-width: 768px) {
+	.white-block{
+		height: 50px;
+		width: 45%;
+	}
+
+	.header {
+		&__Title {
+			font-size: 6.6rem;
+		}
+
+		&__text {
+			font-size: 3.2rem;
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+
+@media(min-width: 992px) {
+	.burger-btn {
+		display: none;
+	}
+
+	.header {
+		background-image: url(../IMG/pokemon-1920.jpg);
+	}
+}
+
+@media(min-width: 1400px) {}
+
+
+@media(min-width: 1800px) {
+
+	.header {
+		&__Title {
+			right: 500px;
+			top: -20px;
+			font-size: 10rem;
+		}
+	
+		&__text {
+			left: 530px;
+			top: 65px;
+			font-size: 6rem;
+		}
+	
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
 }

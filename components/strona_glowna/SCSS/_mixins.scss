@@ -6,3 +6,10 @@
     background: $white;
     transition: width .3s;
 }
+
+@mixin heroImages($bgImg) {
+    background-image: url(../IMG/pokemon-1280.jpg);
+    background-size: cover;
+    background-position: 52% 50%;
+    background-attachment: fixed;
+}
