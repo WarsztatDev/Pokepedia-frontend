@@ -26,6 +26,24 @@ body {
 	font-size: 1.6rem;
 }
 
+.underline {
+	margin-left: 40px;
+	margin-bottom: 50px;
+	width: 280px;
+	height: 5px;
+	background-color: $red;
+}
+
+.section-title {
+	margin-top: 150px;
+	margin-left: 50px;
+	font-size: 26px;
+    text-align: left;
+	color: $white;
+	font-family: Pokemon_solid, sans-serif;
+}
+
+
 //------ NAV ------//
 .burger-btn {
 	position: fixed;
@@ -126,6 +144,15 @@ body {
 	}
 }
 
+//------ MAIN ------//
+
+//-- About Us --//
+.about-us-info {
+	font-size: 20px;
+    margin: 0px 20px 20px;
+    padding: 0 20px;
+	color: $white;
+}
 
 // ===========================
 // MEDIA
@@ -150,6 +177,10 @@ body {
 			font-size: 1.6rem;
 		}
 	}
+
+	.underline {
+		width: 400px;
+	}
 }
 
 
@@ -160,6 +191,18 @@ body {
 
 	.header {
 		background-image: url(../IMG/pokemon-1920.jpg);
+	}
+
+	.underline {
+		width: 600px;
+	}
+
+	.about-us-info {
+		font-size: 26px;
+	}
+
+	.section-title {
+		font-size: 35px;
 	}
 }
 
