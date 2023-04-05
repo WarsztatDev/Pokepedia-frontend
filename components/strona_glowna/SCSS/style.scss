@@ -35,7 +35,7 @@ body {
 }
 
 .section-title {
-	margin-top: 150px;
+	margin-top: 200px;
 	margin-left: 50px;
 	font-size: 26px;
     text-align: left;
@@ -124,8 +124,6 @@ body {
 	}
 
 	&__btn {
-		// position: absolute;
-		// top: 600px;
 		margin-top: 45rem;
 		padding: 0.8em 1.6em;
 		font-size: 1.4rem;
@@ -145,6 +143,38 @@ body {
 }
 
 //------ MAIN ------//
+
+.main {
+	position: relative;
+
+	&__bg-icon-one,
+	&__bg-icon-two,
+	&__bg-icon-three {
+		position: absolute;
+		opacity: 0.2;
+		z-index: -5;
+	}
+
+	&__bg-icon-one {
+		bottom: 98%;
+		left: 48%;
+		width: 40%;
+		rotate: -15deg;
+	}
+
+	&__bg-icon-two {
+		top: 33%;
+		// left: 2%;
+		width: 70%;
+	}
+
+	&__bg-icon-three {
+		bottom: 27%;
+		left: 50%;
+		width: 50%;
+	}
+}
+
 
 //-- About Us --//
 .about-us-info {
@@ -181,6 +211,27 @@ body {
 	.underline {
 		width: 400px;
 	}
+
+	.main {
+		&__bg-icon-one {
+			bottom: 94%;
+			left: 65%;
+			width: 30%;
+			rotate: -15deg;
+		}
+	
+		&__bg-icon-two {
+			top: 30%;
+			// left: 2%;
+			width: 40%;
+		}
+	
+		&__bg-icon-three {
+			bottom: 19.5%;
+			left: 30%;
+			width: 30%;
+		}
+	}
 }
 
 
@@ -206,7 +257,27 @@ body {
 	}
 }
 
-@media(min-width: 1400px) {}
+@media(min-width: 1400px) {
+	.main {
+		&__bg-icon-one {
+			left: 75%;
+			width: 15%;
+			rotate: -15deg;
+		}
+	
+		&__bg-icon-two {
+			top: 31%;
+			left: 21%;
+			width: 15%;
+		}
+	
+		&__bg-icon-three {
+			bottom: 20%;
+			left: 50%;
+			width: 20%;
+		}
+	}
+}
 
 
 @media(min-width: 1800px) {
