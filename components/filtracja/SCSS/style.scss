@@ -26,6 +26,20 @@ body {
 	font-size: 1.6rem;
 }
 
+.underline {
+	margin: 0 auto 40px;
+	width: 270px;
+	height: 5px;
+	background-color: $red;
+}
+
+.section-title {
+	margin-top: 70px;
+	font-size: 40px;
+    text-align: center;
+	color: $white;
+}
+
 
 
 //------ NAV ------//
@@ -107,6 +121,268 @@ body {
 		text-decoration: none;	
 	}
 }
+
+//------------ MAIN ------------//
+
+// ---- Section type  ---- //
+.generations {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+	
+
+	.gen-pokemons {
+		flex: 1;
+		margin: 10px;
+		padding: 20px 50px; 
+		border-radius: 10px;
+		font-size: 16px; 
+		font-weight: bold; 
+		text-align: center; 
+		text-decoration: none; 
+		cursor: pointer; 
+	}
+
+	.one {
+		background-color: $navbar_red;
+		border-color: $navbar_red;
+	}
+}
+
+// ---- Section character ---- //
+.type-pokemon {
+	display: flex;
+	justify-content: center;
+	
+	.column__type {
+		margin: 10px;
+		list-style: none;
+
+		.character-pokemon {
+			width: 100px;
+			height: 40px;
+			font-weight: bold;
+			border-radius: 10px;
+			background: none;
+			color: $white;
+			transition: .5s;
+		}
+	}
+
+	.column__type li {
+		margin-bottom: 30px ;
+	}
+
+
+	.type-one{
+		border: 2px solid #8a8a59;
+	}
+	.type-one:hover{
+		background-color: #8a8a59;
+		color: black;
+	}
+
+
+
+	.type-two{
+		border: 2px solid #b8b8d0;
+	}
+	.type-two:hover{
+		background-color: #b8b8d0;
+		color: black;
+	}
+
+
+
+	.type-three{
+		border: 2px solid #78c850;
+	}
+	.type-three:hover{
+		background-color: #78c850;
+		color: black;
+	}
+
+
+
+	.type-four{
+		border: 2px solid #98d8d8 ;
+	}
+	.type-four:hover{
+		background-color: #98d8d8 ;
+		color: black;
+	}
+
+
+
+	.type-five{
+		border: 2px solid #f85888;
+	}
+	.type-five:hover{
+		background-color: #f85888;
+		color: black;
+	}
+
+
+
+	.type-six{
+		border: 2px solid #7038f8;
+	}
+	.type-six:hover{
+		background-color: #7038f8;
+		color: black;
+	}
+
+
+
+	.type-seven{
+		border: 2px solid #003300;
+	}
+	.type-seven:hover{
+		background-color: #003300;
+		color: black;
+	}
+
+
+
+	.type-eight{
+		border: 2px solid #6890f0;
+	}
+	.type-eight:hover{
+		background-color:  #6890f0;
+		color: black;
+	}
+
+
+
+	.type-nine{
+		border: 2px solid #b8a038;
+	}
+	.type-nine:hover{
+		background-color: #b8a038;
+		color: black;
+	}
+
+
+
+	.type-ten{
+		border: 2px solid #a890f0;
+	}
+	.type-ten:hover{
+		background-color: #a890f0;
+		color: black;
+	}
+
+
+
+	.type-eleven{
+		border: 2px solid #a8b820;
+	}
+	.type-eleven:hover{
+		background-color: #a8b820;
+		color: black;
+	}
+
+
+
+	.type-twelve{
+		border: 2px solid #705898;
+	}
+	.type-twelve:hover{
+		background-color: #705898;
+		color: black;
+	}
+
+
+
+	.type-thirteen{
+		border: 2px solid #f08030;
+	}
+	.type-thirteen:hover{
+		background-color: #f08030;
+		color: black;
+	}
+
+
+
+	.type-fourteen{
+		border: 2px solid #e0c068;
+	}
+	.type-fourteen:hover{
+		background-color: #e0c068;
+		color: black;
+	}
+
+
+
+	.type-fiveteen{
+		border: 2px solid #f8d030;
+	}
+	.type-fiveteen:hover{
+		background-color: #f8d030;
+		color: black;
+	}
+
+
+
+	.type-sixteen{
+		border: 2px solid #705848;
+	}
+	.type-sixteen:hover{
+		background-color: #705848;
+		color: black;
+	}
+
+
+
+	.type-seventeen{
+		border: 2px solid #a040a0;
+	}
+	.type-seventeen:hover{
+		background-color:  #a040a0;
+		color: black;
+	}
+
+
+
+	.type-eighteen{
+		border: 2px solid #e898e8;		
+	}
+	.type-eighteen:hover{
+		background-color: #e898e8;
+		color: black;
+	}
+}
+
+//---- Section Search ----//
+
+.search-form {
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+  }
+  .search-input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  .search-submit {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .search-submit:hover {
+	background-color: #0056b3;
+  }
+
 
 
 

@@ -26,12 +26,56 @@
     </nav>
 
     <main class="main">
-   
-
-
-
-
-        
+        <section class="type-generation" id="pokedex">
+            <h2 class="section-title">Pokedex</h2>
+            <div class="underline"></div>
+            <div class="generations">
+                <button class="gen-pokemons one">Wszystkie Rodzaje</button>
+                <button class="gen-pokemons">GEN I KANTO</button>
+                <button class="gen-pokemons">GEN II JOHTO</button>
+                <button class="gen-pokemons">GEN III HOENN</button>
+                <button class="gen-pokemons">GEN IV SINNOH</button>
+                <button class="gen-pokemons">GEN V UNOVA</button>
+                <button class="gen-pokemons">GEN VI KALOS</button>
+                <button class="gen-pokemons">GEN VII ALOLA</button>
+                <button class="gen-pokemons">GEN VIII GALAR/HISUI</button>
+                <button class="gen-pokemons">GEN IX PALDEA</button>
+            </div>
+        </section>
+        <br>
+        <section class="type-pokemon">
+         <ul class="one-column column__type">
+            <li><button class="type-one character-pokemon">Normalny</button> </li>
+            <li><button class="type-two character-pokemon">Stalowy</button> </li>
+            <li><button class="type-three character-pokemon">trawa</button> </li>
+            <li><button class="type-four character-pokemon">lodowy</button></li>
+            <li><button class="type-five character-pokemon">psychiczny</button></li>
+            <li><button class="type-six character-pokemon">smok</button></li>
+         </ul>
+         <ul class="two-column column__type">
+            <li><button class="type-seven character-pokemon">walczący</button> </li>
+            <li><button class="type-eight character-pokemon">wodny</button></li>
+            <li><button class="type-nine character-pokemon">skalny</button> </li>
+            <li><button class="type-ten character-pokemon">latający</button> </li>
+            <li><button class="type-eleven character-pokemon">robak</button> </li>
+            <li><button class="type-twelve character-pokemon">duch</button></li>
+         </ul>
+         <ul class="three-column column__type">
+            <li><button class="type-thirteen character-pokemon">ognisty</button></li>
+            <li><button class="type-fourteen character-pokemon">ziemia</button> </li>
+            <li><button class="type-fiveteen character-pokemon">elektryczny</button> </li>
+            <li><button class="type-sixteen character-pokemon">mroczny</button></li>
+            <li><button class="type-seventeen character-pokemon">trucizna</button> </li>
+            <li><button class="type-eighteen character-pokemon">baśniowy</button> </li>
+         </ul>
+        </section>
+        <div class="search-form">
+           <form action="/adres/akcji" method="POST">
+             <input class="search-input" type="text" name="szukaj" placeholder="Wyszukaj...">
+             <!-- <input class="search-submit" type="submit" value="Wyszukaj"> -->
+           </form>
+        </div>
+    
     </main>
 
     <script src="JS/main.js"></script>
