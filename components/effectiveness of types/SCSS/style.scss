@@ -113,6 +113,52 @@ body {
 
 //------ MAIN ------//
 
+//-- Section Efective-type --// 
+
+.container {
+	width: 300px;
+	height: 1400px;
+	margin: 20px auto; 
+    background-color: $light_grey;  
+	padding: 20px; 
+	box-sizing: border-box; 
+	border-radius: 25px;
+	margin-top: 150px;
+}
+
+.efective_title {
+	text-align: center; 
+	margin-top: 20px; 
+	font-size: 26px;
+	color: white;
+}
+
+.stats {
+	height: 300px;
+	margin-bottom: 20px;
+
+	.element {
+		height: 25px;
+		width: 100px;
+		margin: 5px auto;
+		margin-bottom: 5px;
+		text-align: center;
+		border-radius: 25px;
+	}
+}
+
+.one {
+	margin-top: 50px;
+}
+
+.stat-title {
+	position: relative;
+	margin-bottom: 25px;
+	left: 30%;
+	width: 100px;
+	text-align: center;
+	color: $white;
+}
 
 
 
