@@ -120,7 +120,6 @@ body {
 	flex-wrap: wrap;
 	margin: 30px;
 	justify-content: center;
-	// max-width: 1800px;
 
 	&__box {
 		position: relative;
@@ -169,6 +168,14 @@ body {
 // MEDIA
 // ===========================
 
+@media (min-width: 576px) {
+	.pokemon {
+		&__box {
+			margin: 25px 25px;
+		}
+	}
+}
+
 @media(min-width: 768px) {}
 
 @media(min-width: 992px) {
@@ -180,4 +187,9 @@ body {
 @media(min-width: 1400px) {}
 
 
-@media(min-width: 1800px) {}
+@media(min-width: 1800px) {
+	.pokemon {
+		margin: 25px 100px;
+	}
+	
+}

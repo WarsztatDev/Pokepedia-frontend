@@ -212,8 +212,18 @@ body {
   left: 50%;
 }
 
+@media (min-width: 576px) {
+  .pokemon__box {
+    margin: 25px 25px;
+  }
+}
 @media (min-width: 992px) {
   .burger-btn {
     display: none;
+  }
+}
+@media (min-width: 1800px) {
+  .pokemon {
+    margin: 25px 100px;
   }
 }/*# sourceMappingURL=style.css.map */
