@@ -113,6 +113,54 @@ body {
 
 //------ MAIN ------//
 
+//-- Section Pokemon --//
+
+.pokemon {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px;
+	justify-content: center;
+	// max-width: 1800px;
+
+	&__box {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		margin: 25px 0px;
+		border-radius: 25px;
+		background-color: $light_grey;
+	}
+
+	&__image {
+		position: absolute;
+		top: 15%;
+		left: 15%;
+		width: 200px;
+		height: 200px;
+		flex-grow: 0;
+	}
+
+	&__title {
+		color: white;
+		text-align: center;
+		margin-top: 250px;
+		font-size: 26px;
+	}
+
+	&__skill {
+		position: absolute;
+		top: 10px;
+		left: 15%;
+		height: 25px;
+		width: 100px;
+		text-align: center;
+		border-radius: 20px;
+	}
+}
+
+.second {
+	left: 50%;
+}
 
 
 

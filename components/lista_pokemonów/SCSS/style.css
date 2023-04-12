@@ -4,6 +4,78 @@
   max-width: 1200px;
 }
 
+.normal {
+  background-color: #8A8A59;
+}
+
+.fire {
+  background-color: #F08030;
+}
+
+.water {
+  background-color: #6890F0;
+}
+
+.grass {
+  background-color: #78C850;
+}
+
+.electric {
+  background-color: #F8D030;
+}
+
+.fly {
+  background-color: #A890F0;
+}
+
+.psycho {
+  background-color: #F85888;
+}
+
+.poison {
+  background-color: #A040A0;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.fight {
+  background-color: #003300;
+}
+
+.steel {
+  background-color: #B8B8D0;
+}
+
+.dirt {
+  background-color: #E0C068;
+}
+
+.rock {
+  background-color: #B8A038;
+}
+
+.ice {
+  background-color: #98D8D8;
+}
+
+.dark {
+  background-color: #705848;
+}
+
+.bug {
+  background-color: #A8B820;
+}
+
+.dragon {
+  background-color: #7038F8;
+}
+
+.fairy {
+  background-color: #E898E8;
+}
+
 @font-face {
   font-family: Pokemon_solid;
   src: url("../Fonts/Pokemon_Solid.ttf") format("truetype");
@@ -98,37 +170,46 @@ body {
   transition-delay: 0.1s;
 }
 
-.pagination {
+.pokemon {
   display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
   justify-content: center;
-  margin: 50px 20px;
 }
-
-.pagination-item {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 0 3px;
+.pokemon__box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 25px 0px;
+  border-radius: 25px;
+  background-color: #373736;
+}
+.pokemon__image {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 200px;
+  height: 200px;
+  flex-grow: 0;
+}
+.pokemon__title {
+  color: white;
   text-align: center;
-  line-height: 30px;
-  background-color: #D9D9D9;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
+  margin-top: 250px;
+  font-size: 26px;
+}
+.pokemon__skill {
+  position: absolute;
+  top: 10px;
+  left: 15%;
+  height: 25px;
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
 }
 
-.pagination-item:hover {
-  background-color: #8d8b8b;
-}
-
-.pagination-item:last-child {
-  font-weight: bold;
-  width: 150px;
-  background-color: #FD0054;
-}
-
-.pagination-item:last-child:hover {
-  background-color: #AB0038;
+.second {
+  left: 50%;
 }
 
 @media (min-width: 992px) {
