@@ -24,7 +24,6 @@ html {
 
 body {
 	font-family: 'Ubuntu', sans-serif;
-	// font-size: 1.6rem;
 }
 
 
@@ -119,7 +118,6 @@ body {
 	flex-wrap: wrap;
 	margin: 20px 10px;
 	justify-content: center;
-
 	
 	&__box {
 		position: relative;
@@ -127,7 +125,6 @@ body {
 		height: 230px;
 		margin: 5px;
 		border-radius: 25px;
-		// background-color: $light_grey;
 	}
 	
 	
@@ -149,7 +146,6 @@ body {
 		border-radius: 5px;
 	}
 
-	
 
 	&__textarea {
 		position: absolute;
@@ -451,23 +447,198 @@ body {
 
 
 
-
-
-
-
-
-
-
 // ===========================
 // MEDIA
 // ===========================
 
-@media(min-width: 768px) {}
+@media(min-width: 576px) {}
+
+@media(min-width: 768px) {
+	.location {	
+		font-size: 1.6rem;
+
+		&__box {
+			width: 500px;
+			height: 230px;
+		}
+		
+		
+		&__title {
+			margin: 5px 50px;
+			font-size: 20px;
+		}
+		
+	
+		&__skill {
+			height: 25px;
+			width: 100px;
+		}
+	
+		
+		&__textarea {
+			left: 230px;
+			height: 25px;
+			width: 250px;
+			top: 43px;
+		}
+	}
+
+	//- GEN I -//
+
+.blue {
+	left: 23%;
+}
+
+.japan-blue {
+	left: 13%;
+}
+
+.yellow {
+	left: 13%;
+}
+
+
+//- GEN II -//
+
+.silver {
+	left: 23%;
+}
+
+.crystal {
+	left: 13%;
+}
+
+
+//- GEN III -//
+
+.sapphire {
+	left: 23%;
+}
+
+.emerald {
+	left: 13%;
+}
+
+.green-leaf {
+	left: 23%;
+}
+
+.coloseum {
+	left: 13%;
+}
+
+.XD {
+	left: 13%;
+}
+
+
+//- GEN IV -//
+
+.pearl {
+	left: 23%;
+}
+
+.platinum {
+	left: 13%;
+}
+
+.silver-soul {
+	left: 23%;
+}
+
+.palpark {
+	left: 13%;
+}
+
+.pokewalker {
+    background-color: #FF3333;
+	top: 188px;
+	left: 13%;
+}
+
+
+//- GEN V -//
+
+.white {
+	left: 23%;
+}
+
+.white-two {
+	left: 23%;
+}
+
+
+//- GEN VI -//
+
+.Y {
+	left: 23%;
+}
+
+.omega-ruby {
+	font-size: 13px;
+}
+
+.alpha-Sapphire {
+	left: 23%;
+	font-size: 13px;
+}
+
+//- GEN VII -//
+
+.moon {
+	left: 23%;
+}
+
+.ultra-moon {
+	left: 23%;
+}
+
+.letsgo-pikatchu {
+	font-size: 12px;
+} 
+
+.letsgo-Eevee {
+	left: 23%;
+	font-size: 12px;
+}
+
+
+//- GEN VIII -//
+
+.shield {
+	left: 23%;
+}
+
+.expansion-pass {
+	width: 210px;
+}
+
+.brilliant-diamond {
+    font-size: 12px;
+}
+
+.sparkling-pearl {
+    font-size: 13px;
+	left: 23%;
+}
+
+.legends-arceus {
+	width: 210px;
+}
+
+
+//- GEN IX -//
+
+.violet {
+	left: 23%;
+}
+
+}
 
 @media(min-width: 992px) {
 	.burger-btn {
-		display: none;
-	}
+		display: none;	
+	}	
 }
 
 @media(min-width: 1400px) {}
