@@ -1,0 +1,468 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.normal {
+  background-color: #8A8A59;
+}
+
+.fire {
+  background-color: #F08030;
+}
+
+.water {
+  background-color: #6890F0;
+}
+
+.grass {
+  background-color: #78C850;
+}
+
+.electric {
+  background-color: #F8D030;
+}
+
+.fly {
+  background-color: #A890F0;
+}
+
+.psycho {
+  background-color: #F85888;
+}
+
+.poison {
+  background-color: #A040A0;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.fight {
+  background-color: #003300;
+}
+
+.steel {
+  background-color: #B8B8D0;
+}
+
+.dirt {
+  background-color: #E0C068;
+}
+
+.rock {
+  background-color: #B8A038;
+}
+
+.ice {
+  background-color: #98D8D8;
+}
+
+.dark {
+  background-color: #705848;
+}
+
+.bug {
+  background-color: #A8B820;
+}
+
+.dragon {
+  background-color: #7038F8;
+}
+
+.fairy {
+  background-color: #E898E8;
+}
+
+@font-face {
+  font-family: Pokemon_solid;
+  src: url("../Fonts/Pokemon_Solid.ttf") format("truetype");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: #242423;
+  color: white;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(100%);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  background-color: #242423;
+  z-index: 100;
+}
+.nav--active {
+  transform: translateX(0);
+}
+.nav__item {
+  position: relative;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2em;
+  font-size: 2.8rem;
+  color: #D9D9D9;
+  text-decoration: none;
+}
+
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+}
+.burger-btn:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.burger-btn:hover .burger-btn__bars::after, .burger-btn:hover .burger-btn__bars::before {
+  width: 100%;
+}
+.burger-btn__box {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  content: "";
+  background: #D9D9D9;
+  transition: width 0.3s;
+}
+.burger-btn__bars {
+  width: 100%;
+}
+.burger-btn__bars::after {
+  top: 13px;
+  width: 60%;
+}
+.burger-btn__bars::before {
+  top: 27px;
+  width: 30%;
+  transition-delay: 0.1s;
+}
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 10px;
+  justify-content: center;
+}
+.location__box {
+  position: relative;
+  width: 300px;
+  height: 230px;
+  margin: 5px;
+  border-radius: 25px;
+}
+.location__title {
+  color: white;
+  text-align: left;
+  margin: 14px 40px;
+  font-size: 13px;
+}
+.location__skill {
+  position: absolute;
+  top: 43px;
+  left: 5px;
+  height: 20px;
+  width: 65px;
+  text-align: center;
+  border-radius: 5px;
+}
+.location__textarea {
+  position: absolute;
+  left: 150px;
+  height: 20px;
+  width: 130px;
+  background-color: #717171;
+  border-radius: 5px;
+}
+.location .two {
+  top: 80px;
+}
+.location .three {
+  top: 116px;
+}
+.location .four {
+  top: 152px;
+}
+.location .five {
+  top: 188px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+  left: 75px;
+}
+
+.japan-blue {
+  background-color: blue;
+  top: 80px;
+  left: 43px;
+}
+
+.yellow {
+  background-color: #ffd733;
+  top: 116px;
+  left: 43px;
+}
+
+.gold {
+  background-color: #DAA520;
+}
+
+.silver {
+  background-color: #C0C0C0;
+  left: 75px;
+}
+
+.crystal {
+  background-color: #4FD9FF;
+  top: 80px;
+  left: 43px;
+}
+
+.rubin {
+  background-color: #A00000;
+}
+
+.sapphire {
+  background-color: #0000A0;
+  left: 75px;
+}
+
+.emerald {
+  background-color: #00A000;
+  top: 80px;
+  left: 43px;
+}
+
+.fire-red {
+  background-color: #FF7327;
+  top: 116px;
+}
+
+.green-leaf {
+  background-color: #00DD00;
+  top: 116px;
+  left: 75px;
+}
+
+.coloseum {
+  background-color: white;
+  border: 2px solid #b6cae4;
+  color: #b6cae4;
+  top: 152px;
+  left: 43px;
+}
+
+.XD {
+  background-color: white;
+  border: 2px solid #604E82;
+  color: #604E82;
+  top: 188px;
+  left: 43px;
+}
+
+.diamond {
+  background-color: #AAAAFF;
+}
+
+.pearl {
+  background-color: #FFAAAA;
+  left: 75px;
+}
+
+.platinum {
+  background-color: #999999;
+  top: 80px;
+  left: 43px;
+}
+
+.golden-heart {
+  background-color: #B69E00;
+  top: 116px;
+}
+
+.silver-soul {
+  background-color: #C0C0E1;
+  top: 116px;
+  left: 75px;
+}
+
+.palpark {
+  background-color: #A2E0A3;
+  top: 152px;
+  left: 43px;
+}
+
+.pokewalker {
+  background-color: #FF3333;
+  top: 188px;
+  left: 43px;
+}
+
+.black {
+  background-color: #444444;
+}
+
+.white {
+  background-color: #E1E1E1;
+  left: 75px;
+  color: black;
+}
+
+.black-two {
+  background-color: #424B50;
+  top: 80px;
+}
+
+.white-two {
+  background-color: #E3CED0;
+  top: 80px;
+  left: 75px;
+  color: black;
+}
+
+.X {
+  background-color: #025DA6;
+}
+
+.Y {
+  background-color: #EA1A3E;
+  left: 75px;
+}
+
+.omega-ruby {
+  background-color: #AB2813;
+  top: 80px;
+  font-size: 9px;
+}
+
+.alpha-Sapphire {
+  background-color: #26649C;
+  top: 80px;
+  left: 75px;
+  font-size: 8px;
+}
+
+.sun {
+  background-color: #F1912B;
+}
+
+.moon {
+  background-color: #5599CA;
+  left: 75px;
+}
+
+.ultra-sun {
+  background-color: #E95B2B;
+  top: 80px;
+}
+
+.ultra-moon {
+  background-color: #226DB5;
+  top: 80px;
+  left: 75px;
+}
+
+.letsgo-pikatchu {
+  background-color: #F5DA26;
+  top: 116px;
+  font-size: 8px;
+}
+
+.letsgo-Eevee {
+  background-color: #D4924B;
+  top: 116px;
+  left: 75px;
+  font-size: 8px;
+}
+
+.sword {
+  background-color: #fff;
+  color: #00A1E9;
+  border: 2px solid #00A1E9;
+}
+
+.shield {
+  background-color: #fff;
+  color: #BF004F;
+  border: 2px solid #BF004F;
+  left: 75px;
+}
+
+.expansion-pass {
+  background-color: #AC379E;
+  top: 80px;
+  width: 130px;
+}
+
+.brilliant-diamond {
+  background-color: #44BAE5;
+  top: 116px;
+  font-size: 7px;
+}
+
+.sparkling-pearl {
+  background-color: #DA7D99;
+  top: 116px;
+  left: 75px;
+  font-size: 7px;
+}
+
+.legends-arceus {
+  background-color: white;
+  color: #36597B;
+  border: 2px solid #36597B;
+  top: 152px;
+  width: 130px;
+}
+
+.scarlet {
+  background-color: #F34134;
+}
+
+.violet {
+  background-color: #8334B7;
+  left: 75px;
+}
+
+@media (min-width: 992px) {
+  .burger-btn {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

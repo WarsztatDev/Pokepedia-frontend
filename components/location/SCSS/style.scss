@@ -1,0 +1,476 @@
+@import './colors';
+@import './components';
+@import './mixins';
+
+@font-face {
+	font-family: Pokemon_solid;
+	src: url('../Fonts/Pokemon_Solid.ttf') format('truetype');
+  }
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+    background-color: $dark_grey;
+	color: white;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	// font-size: 1.6rem;
+}
+
+
+
+//------ NAV ------//
+
+.nav {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	width: 100%;
+	transform: translateX(100%);
+	transition: .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+	background-color: $dark_grey;
+	z-index: 100;
+	
+	&--active {
+		transform: translateX(0);
+	}
+	
+	&__item {
+		position: relative;
+		display: block;
+		margin: 0.5em 0;
+		padding: 0.5em 2em;
+		font-size: 2.8rem;
+		color: $white;
+		text-decoration: none;	
+	}
+}
+
+
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1000;
+
+	&:focus {
+		outline: none;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 8px;
+	}
+
+    &:hover {
+        .burger-btn__bars::after,.burger-btn__bars::before {
+            width: 100%;
+        }
+    }
+
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 30px;
+	}
+
+	&__bars,
+	&__bars::after,
+	&__bars::before {
+		@include burgerBtn;
+	}
+
+    &__bars {
+        width: 100%;
+
+        &::after {
+            top: 13px;
+            width: 60%;
+        }
+
+        &::before {
+            top: 27px;
+            width: 30%;
+            transition-delay: .1s;
+        }
+    }
+}
+
+
+//------ MAIN ------//
+
+.location {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 10px;
+	justify-content: center;
+
+	
+	&__box {
+		position: relative;
+		width: 300px;
+		height: 230px;
+		margin: 5px;
+		border-radius: 25px;
+		// background-color: $light_grey;
+	}
+	
+	
+	&__title {
+		color: white;
+		text-align: left;
+		margin: 14px 40px;
+		font-size: 13px;
+	}
+	
+
+	&__skill {
+		position: absolute;
+		top: 43px;
+		left: 5px;
+		height: 20px;
+		width: 65px;
+		text-align: center;
+		border-radius: 5px;
+	}
+
+	
+
+	&__textarea {
+		position: absolute;
+		left: 150px;
+		height: 20px;
+		width: 130px;
+		background-color: #717171;
+		border-radius: 5px;
+	}
+
+	.two {
+		top: 80px;
+	}
+
+	.three {
+		top: 116px;
+	}
+
+	.four {
+		top: 152px;
+	}
+
+	.five {
+		top: 188px;
+	}
+}
+
+
+//-- Lokations type --//
+
+
+
+//- GEN I -//
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+	left: 75px;
+}
+
+.japan-blue {
+	background-color: blue;
+	top: 80px;
+	left: 43px;
+}
+
+.yellow {
+    background-color: #ffd733;
+	top: 116px;
+	left: 43px;
+}
+
+
+//- GEN II -//
+
+.gold {
+    background-color: #DAA520;
+}
+
+.silver {
+    background-color: #C0C0C0;
+	left: 75px;
+}
+
+.crystal {
+    background-color: #4FD9FF;
+	top: 80px;
+	left: 43px;
+}
+
+
+//- GEN III -//
+
+.rubin {
+    background-color: #A00000;
+}
+
+.sapphire {
+    background-color: #0000A0;
+	left: 75px;
+}
+
+.emerald {
+    background-color: #00A000;
+	top: 80px;
+	left: 43px;
+}
+
+.fire-red {
+    background-color: #FF7327;
+	top: 116px;
+}
+
+.green-leaf {
+    background-color: #00DD00;
+	top: 116px;
+	left: 75px;
+}
+
+.coloseum {
+    background-color: #ffff;
+    border: 2px solid #b6cae4;
+	color: #b6cae4;
+	top: 152px;
+	left: 43px;
+}
+
+.XD {
+    background-color: #ffff;
+    border: 2px solid #604E82;
+	color: #604E82;
+	top: 188px;
+	left: 43px;
+}
+
+
+//- GEN IV -//
+
+.diamond {
+    background-color: #AAAAFF;
+}
+
+.pearl {
+    background-color: #FFAAAA;
+	left: 75px;
+}
+
+.platinum {
+    background-color: #999999;
+	top: 80px;
+	left: 43px;
+}
+
+.golden-heart {
+    background-color: #B69E00;
+	top: 116px;
+}
+
+.silver-soul {
+    background-color: #C0C0E1;
+	top: 116px;
+	left: 75px;
+}
+
+.palpark {
+    background-color: #A2E0A3;
+	top: 152px;
+	left: 43px;
+}
+
+.pokewalker {
+    background-color: #FF3333;
+	top: 188px;
+	left: 43px;
+}
+
+
+//- GEN V -//
+
+.black {
+    background-color: #444444;
+}
+
+.white {
+    background-color: #E1E1E1;
+	left: 75px;
+	color: black;
+}
+
+.black-two {
+    background-color: #424B50;
+	top: 80px;
+}
+
+.white-two {
+    background-color: #E3CED0;
+	top: 80px;
+	left: 75px;
+	color: black;
+}
+
+
+//- GEN VI -//
+
+.X {
+    background-color: #025DA6;
+}
+
+.Y {
+    background-color: #EA1A3E;
+	left: 75px;
+}
+
+.omega-ruby {
+    background-color: #AB2813;
+	top: 80px;
+	font-size: 9px;
+}
+
+.alpha-Sapphire {
+    background-color: #26649C;
+	top: 80px;
+	left: 75px;
+	font-size: 8px;
+}
+
+//- GEN VII -//
+
+.sun {
+    background-color: #F1912B;
+}
+
+.moon {
+    background-color: #5599CA;
+	left: 75px;
+}
+
+.ultra-sun {
+    background-color: #E95B2B;
+	top: 80px;
+}
+
+.ultra-moon {
+    background-color: #226DB5;
+	top: 80px;
+	left: 75px;
+}
+
+.letsgo-pikatchu {
+    background-color: #F5DA26;
+	top: 116px;
+	font-size: 8px;
+} 
+
+.letsgo-Eevee {
+    background-color: #D4924B;
+	top: 116px;
+	left: 75px;
+	font-size: 8px;
+}
+
+
+//- GEN VIII -//
+
+.sword {
+    background-color: #fff;
+    color: #00A1E9;
+    border: 2px solid #00A1E9;
+}
+
+.shield {
+    background-color: #fff;
+    color: #BF004F;
+    border: 2px solid #BF004F;
+	left: 75px;
+}
+
+.expansion-pass {
+    background-color: #AC379E;
+	top: 80px;
+	width: 130px;
+}
+
+.brilliant-diamond {
+    background-color: #44BAE5;
+	top: 116px;
+	font-size: 7px;
+}
+
+.sparkling-pearl {
+    background-color: #DA7D99;
+	top: 116px;
+	left: 75px;
+	font-size: 7px;
+}
+
+.legends-arceus {
+    background-color: #ffff;
+    color: #36597B;
+    border: 2px solid #36597B;
+	top: 152px;
+	width: 130px;
+}
+
+
+//- GEN IX -//
+
+.scarlet {
+    background-color: #F34134;
+}
+
+.violet {
+    background-color: #8334B7;
+	left: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+// ===========================
+// MEDIA
+// ===========================
+
+@media(min-width: 768px) {}
+
+@media(min-width: 992px) {
+	.burger-btn {
+		display: none;
+	}
+}
+
+@media(min-width: 1400px) {}
+
+
+@media(min-width: 1800px) {}
