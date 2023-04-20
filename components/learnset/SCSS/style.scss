@@ -5,7 +5,7 @@
 @font-face {
 	font-family: Pokemon_solid;
 	src: url('../Fonts/Pokemon_Solid.ttf') format('truetype');
-  }
+}
 
 *,
 *::before,
@@ -17,14 +17,12 @@
 
 html {
 	scroll-behavior: smooth;
-    background-color: $dark_grey;
+	background-color: $dark_grey;
 }
 
 body {
 	font-family: 'Ubuntu', sans-serif;
 }
-
-
 
 //------ NAV ------//
 
@@ -38,14 +36,14 @@ body {
 	height: 100vh;
 	width: 100%;
 	transform: translateX(100%);
-	transition: .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 	background-color: $dark_grey;
 	z-index: 100;
-	
+
 	&--active {
 		transform: translateX(0);
 	}
-	
+
 	&__item {
 		position: relative;
 		display: block;
@@ -53,10 +51,9 @@ body {
 		padding: 0.5em 2em;
 		font-size: 2.8rem;
 		color: $white;
-		text-decoration: none;	
+		text-decoration: none;
 	}
 }
-
 
 .burger-btn {
 	position: fixed;
@@ -74,11 +71,12 @@ body {
 		border-radius: 8px;
 	}
 
-    &:hover {
-        .burger-btn__bars::after,.burger-btn__bars::before {
-            width: 100%;
-        }
-    }
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
+			width: 100%;
+		}
+	}
 
 	&__box {
 		position: relative;
@@ -92,20 +90,20 @@ body {
 		@include burgerBtn;
 	}
 
-    &__bars {
-        width: 100%;
+	&__bars {
+		width: 100%;
 
-        &::after {
-            top: 13px;
-            width: 60%;
-        }
+		&::after {
+			top: 13px;
+			width: 60%;
+		}
 
-        &::before {
-            top: 27px;
-            width: 30%;
-            transition-delay: .1s;
-        }
-    }
+		&::before {
+			top: 27px;
+			width: 30%;
+			transition-delay: 0.1s;
+		}
+	}
 }
 
 h2 {
@@ -127,7 +125,6 @@ h2 {
 	height: 5px;
 	background-color: $red;
 }
-
 
 table {
 	display: flex;
@@ -153,7 +150,6 @@ td {
 	padding: 3px;
 	text-align: center;
 }
-
 
 .bgc_type_fairy {
 	background-color: #ee99ac;
@@ -182,22 +178,45 @@ td {
 	width: 55px;
 }
 
-
-
-
 // ===========================
 // MEDIA
 // ===========================
 
-@media(min-width: 768px) {}
-
-@media(min-width: 992px) {
-	.burger-btn {
-		display: none;
+@media (min-width: 768px) {
+	table {
+		font-size: 23px;
+	}
+	.bgc {
+		height: 30px;
+		width: 95px;
+	}
+	th,
+	td {
+		padding: 15px;
 	}
 }
 
-@media(min-width: 1400px) {}
+@media (min-width: 992px) {
+	.burger-btn {
+		display: none;
+	}
+	table{
+		font-size: 28px;
+	}
+	h2{
+		font-size: 40px;
+	}
+	.underline{
+		width: 200px;
+	}
+	.bgc{
+		height: 35px;
+		width: 115px;
+	}
+}
 
+@media (min-width: 1400px) {
+}
 
-@media(min-width: 1800px) {}
+@media (min-width: 1800px) {
+}
